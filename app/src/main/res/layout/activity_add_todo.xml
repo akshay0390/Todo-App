@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.walmartlabs.todo_app.AddTodo">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/et_editTodo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todoPrioritySpinner"
+        android:layout_below="@+id/et_editTodo"
+        android:spinnerMode="dropdown"
+        android:layout_alignLeft="@+id/et_editTodo"
+        android:layout_alignStart="@+id/et_editTodo" />
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todoCalender"
+        android:layout_below="@+id/todoPrioritySpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_todo"
+        android:id="@+id/btn_saveTodo"
+        android:onClick="onSaveTodo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_todo_desc"
+        android:id="@+id/tv_todoDesc"
+        android:textSize="50px"
+        android:gravity="center"
+        android:layout_above="@+id/todoPrioritySpinner"
+        android:layout_toLeftOf="@+id/et_editTodo"
+        android:layout_alignTop="@+id/et_editTodo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_priority_label"
+        android:id="@+id/tv_priorityLabel"
+        android:textSize="50px"
+        android:gravity="center"
+        android:layout_above="@+id/todoCalender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_editTodo"
+        android:layout_toLeftOf="@+id/et_editTodo"
+        android:layout_toStartOf="@+id/et_editTodo" />
+</RelativeLayout>

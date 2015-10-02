@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Todo_App</string>
+
+    <string name="add_btn_label">Add</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit_todo">EditTodo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="save_todo">Save</string>
+    <string name="todo_item_description" />
+    <string name="todo_item_priority" />
+    <string name="todo_priority" />
+    <string name="todo_item_duedate" />
+    <string name="tv_todo_desc">Task :</string>
+    <string name="tv_priority_label">Priority :</string>
+</resources>

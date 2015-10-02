@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:padding="6dip">
+
+
+    <TextView
+        android:id="@+id/tv_todoItemDescription"
+        android:layout_width="225dp"
+        android:layout_height="fill_parent"
+        android:text="@string/todo_item_description"
+        android:layout_alignTop="@+id/tv_todoItemDueDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="75px"
+        android:textColor="#4ab3ff"
+        android:paddingLeft="3dp"
+        android:background="@drawable/border"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:text="@string/todo_item_priority"
+        android:id="@+id/tv_todoItemPriority"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="40px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="#ff6152"
+        android:background="@drawable/border"
+        android:layout_alignLeft="@+id/tv_todoItemDueDate"
+        android:layout_alignStart="@+id/tv_todoItemDueDate"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:text="@string/todo_item_duedate"
+        android:id="@+id/tv_todoItemDueDate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tv_todoItemPriority"
+        android:layout_alignWithParentIfMissing="true"
+        android:textSize="40px"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="#ff9e0b"
+        android:background="@drawable/border"
+        android:layout_toRightOf="@+id/tv_todoItemDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/todo_item_description"
+        android:id="@+id/tv_todoItemDescription"
+        android:textColor="#4ab3ff"
+        android:textSize="75px"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="@string/todo_item_priority"
+            android:id="@+id/tv_todoItemPriority"
+            android:textColor="#ff6152"
+            android:textSize="30px"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="@string/todo_item_duedate"
+            android:id="@+id/tv_todoItemDueDate"
+            android:textColor="#ff9e0b"
+            android:textSize="30px"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center" />
+    </LinearLayout -->
+
+</RelativeLayout>
